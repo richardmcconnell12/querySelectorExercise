@@ -3,8 +3,9 @@ sectionEl.textContent = "Welcome to Ricky's Blog";
 
 const sectionEl2 = document.querySelectorAll(".article__header");
 // console.log(sectionEl2)
-sectionEl2[0].classList.add("important");
-sectionEl2[1].classList.add("important");
+for (let i = 0; i < sectionEl2.length; i++) {
+    sectionEl2[i].classList.add("important");
+}
 
 
 sectionEl3 = document.querySelector(".dashed");
